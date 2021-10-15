@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="">
+        <tr>
+            <td>
+                <p>Nhập độ dài cạnh ạ </p>
+                <input type="number" id="canha">
+            </td>
+        </tr>
+
+        <button onclick="chuvi()">Tính chu vi</button>
+        <button onclick="dientich()">Tính diện tích</button>
+    </form>
+    <script>
+        function chuvi() {
+            let width = +document.getElementById('canha').value;
+            let chuVi = width * 4 ;
+            if (chuVi > 0) {
+                document.write('chu vi hình vuông là : ' + chuVi) ;
+            }
+            }
+        function dientich() {
+            let width = +document.getElementById('canha').value;
+            let dienTich = width ** 2 ;
+            if (dienTich > 0) {
+                document.write('diện tích hình vuông là : ' + dienTich);
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <tr>
+        <td>
+            <p>Nhập a: </p>
+            <input type="number" id="giatri1">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Nhập b: </p>
+            <input type="number" id="giatri2">
+        </td>
+    </tr>
+    <button onclick="abinh()">Tính a bình</button>
+    <button onclick="abinhb()">Tính a mũ b</button>
+</form>
+<script>
+    function abinh() {
+        let giaTria = +document.getElementById('giatri1').value;
+        let S = giaTria ** 2
+        if (S > 0) {
+            document.write('Giá trị của A^2 là : ' + S)  ;
+        }
+    }
+    function abinhb() {
+        let giaTria = +document.getElementById('giatri1').value;
+        let giaTrib = +document.getElementById('giatri2').value;
+        let S = giaTria ** giaTrib
+        if (S > 0) {
+            document.write('Giá trị của a^b là :' + S);
+        }
+    }
+</script>
+</body>
+</html>

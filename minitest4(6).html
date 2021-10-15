@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <tr>
+        <td>
+            <p>Nhập cạnh a : </p>
+            <input type="number" id="canh1">
+        </td>
+
+    </tr>
+    <tr>
+    <td>
+        <p>Nhập cạnh b : </p>
+        <input type="number" id="canh2">
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <p>Nhập cạnh c : </p>
+        <input type="number" id="canh3">
+    </td>
+    <button onclick="tinh()">Xem kết quả</button>
+    </tr>
+</form>
+    <script>
+        function tinh() {
+            let canha = +document.getElementById('canh1').value;
+            let canhb = +document.getElementById('canh2').value;
+            let canhc = +document.getElementById('canh3').value;
+            if (canha > 0 && canhb >0 && canhc > 0) {
+                document.write('đây là 1 hình tam giác');
+                    }
+        }
+    </script>
+</body>
+</html>

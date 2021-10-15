@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="">
+        <tr>
+            <td>
+                <p>Nhập giá trị của b </p>
+                <input type="number" id="giatria">
+            </td>
+        </tr><tr>
+            <td>
+                <p>Nhập giá trị của b </p>
+                <input type="number" id="giatrib">
+            </td>
+        </tr>
+
+        <button onclick="chuvi()">Tổng 2 giá trị</button>
+
+    </form>
+    <script>
+        function chuvi() {
+            let giaTria = +document.getElementById('giatria').value;
+            let giaTrib = +document.getElementById('giatrib').value;
+            let tong = giaTria + giaTrib ;
+            if (tong > 0) {
+                document.write('Tổng của 2 giá trị là : ' + tong) ;
+            }
+        }
+    </script>
+</body>
+</html>
