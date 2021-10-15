@@ -6,7 +6,26 @@
 </head>
 <body>
 <form action="">
-
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <input type="number" id="c">
+    <button onclick="check()">Kiểm tra</button>
+    <p id="ketqua"></p>
 </form>
+    <script>
+        function check(){
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let c = +document.getElementById("c").value;
+            if (a > 0 && b > 0 && c > 0){
+                if(a === b && a === c && b === c) {
+                    document.getElementById("ketqua").innerHTML = "là 3 cạnh của tam giác đều"
+                }
+            }else {
+                document.getElementById("ketqua").innerHTML = "không phải là 3 cạnh của tam giác đều"
+            }
+        }
+    </script>
+
 </body>
 </html>
